@@ -14,7 +14,7 @@
 }
 
 body{
-      
+    color:#333;
 }
 
 /* NAVBAR */
@@ -27,13 +27,14 @@ nav{
     box-shadow:0 2px 10px rgba(0,0,0,0.05);
     position:sticky;
     top:0;
+    
 }
 
 nav h2{
     color:#2563eb;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
-    
+    margin-bottom: 10px;
 }
 
 nav ul{
@@ -45,6 +46,7 @@ nav ul{
 nav ul li{
     margin-left:60px;
 }
+
 nav ul li a{
     text-decoration:none;
     color:#333;
@@ -54,82 +56,40 @@ nav ul li a{
 nav ul li a:hover{
     color:#2563eb;
 }
-.menu-toggle {
-  display: none;
-  font-size: 25px;
-  color: white;
-  cursor: pointer;
-}
-ul{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-ul li { 
-    cursor: pointer;
-}
-
-/* 📱 Mobile View */
-@media (max-width: 768px) {
-  ul {
-    display: none;
-    flex-direction: column;
-    background:lightgray;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    box-shadow: #777;
-  }
-
-  ul.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
-
-
 
 /* ABOUT SECTION */
 .about-section{
-    padding:90px 60px;
-    background-color:#5282e9;
+    padding:50px 60px;
+    background-color:#1e90ff;
      
     
 }
 
 .about-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:150px;
-
+    text-align: center;
+    padding: 10px 20px;
+    background:#1e90ff;
+    color:white ;
 }
-
 .about-header h1{
-    font-size:60px;
-    font-weight:300;
-    color:#333;
-    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-top: -20px;
 }
-
 .about-header p{
-    width:400px;
-    color:#555;
-    line-height:1.6;
-}
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
 
+}
 /* TEAM CARDS */
 .team{
     display:flex;
     justify-content:center;
-    gap:40px;
+    gap:100px;
     flex-wrap:wrap;
     margin-top: 80px;
-    background-color: lightgray;
+    background-color: white;
 }
 .pesron{
     padding: 80px;
@@ -143,22 +103,22 @@ ul li {
     text-align: center;
     margin-top: -90px;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 20px;
 
 }
 
 
 .card{
-    background:#fff;
+    background:#e6f2ff;
     width:280px;
     border-radius:20px;
     padding:20px;
     text-align:center;
     box-shadow:0 10px 25px rgba(0,0,0,0.1);
     transition:0.3s;
-    margin-top: -80px;
+    margin-top: 50px;
     text-decoration: none;
-    
+    flex-wrap: wrap;
 }
 
 .card:hover{
@@ -170,6 +130,7 @@ ul li {
     border-radius:20px;
     height:280px;
     object-fit:cover;
+
 }
 .name-bar{
     background:#4f6cff;
@@ -189,6 +150,7 @@ ul li {
     text-align: center;
     gap: 30px;
     position: relative;
+    font-weight: bold;
 }
 
 .plus{
@@ -210,16 +172,18 @@ ul li {
 
 .role{
     margin-top:10px;
-    color:#777;
+    color:black;
     font-size:14px;
+    font-weight: bold;
 }
 .hot{
-    background-color:lightgray;
+    background-color:white;
     padding: 100px;
     text-align: center;
 }
 .hot h1{
     font-weight: bold;
+    color: #1e90ff;
 }
 .hot p{
     font-size:18px;
@@ -245,15 +209,15 @@ ul li {
 <!-- NAVBAR -->
 <nav class="nav-bar">
     <h2>DATAMEDAI</h2>
-    <div class="menu-toggle" onclick="toggleMenu()"> ☰
+    <div class="menu-btn"> 
 
     </div>
-    <ul id="menu">
+    <ul id="menu" class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="index1.html">About Us</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index2.html">Products</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="index3.html">Contact</a></li>
         
     </ul>
 </nav>
@@ -264,40 +228,41 @@ ul li {
         <h1>ABOUT  US</h1>
         <p>
             We love creating experiences that enable people to connect,
-            express themselves, and establish meaningful relationships.
+            express themselves, <br> establish meaningful relationships.
         </p>
+        
         </div>
         
     </section>
 
     <section class="person">
-        <h2>strong team</h2>
+        <h2></h2>
            <div class="team">       
            <div class="card">
-            <img src="https://i.postimg.cc/QCp1v9xs/person1-removebg-preview.png">
+            <img src="person1-removebg-preview.png">
             <div class="name-bar">
             
-                <li><a href="index.html">  Anand Kumar</a></li>
+                <li><a href="ex1.html">  Anand Kumar</a></li>
                 
-                 <div class="plus"><a href="index.html">+</a></div>
+                 <div class="plus"><a href="ex1.html">+</a></div>
             </div>
             <div class="role">CEO</div>
         </div>
 
         <div class="card">
-            <img src="https://i.postimg.cc/nzqXL88y/person-3-removebg-preview.png">
+            <img src="person_3-removebg-preview.png">
             <div class="name-bar">
-                <li><a href="index.html">   Boopesh</a></li>
-                <div class="plus"><a href="index.html">+</a></div>
+                <li><a href="ex2.html">   Boopesh</a></li>
+                <div class="plus"><a href="ex2.html">+</a></div>
             </div>
             <div class="role">PROJECT MANAGER</div>
         </div>
 
         <div class="card">
-            <img src="https://i.postimg.cc/yxvYJsLR/person-2-removebg-preview.png">
+            <img src="person_2-removebg-preview.png">
             <div class="name-bar">
-                <li><a href="index.html">  Nethaji</a></li>
-                <div class="plus"><a href="index.html">+</a></div>
+                <li><a href="ex3.html">  Nethaji</a></li>
+                <div class="plus"><a href="ex3.html">+</a></div>
             </div>
             <div class="role">MARKETING</div>
         </div>
@@ -309,10 +274,7 @@ ul li {
     <h1>Team Up with Real Experts</h1><br>
 <p>Our team of experts are always up to date on the latest trends and technologies. Grow your business smarter, not harder – let our team of experts help you succeed</p>
  </div>
-  <script>
-    function toggleMenu() {
-  document.getElementById("nav-links").classList.toggle("active");
-}
-  </script>
 </body>
 </html>
+
+
