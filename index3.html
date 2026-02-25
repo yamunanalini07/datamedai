@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Your Startup</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: lightgrey;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+
+}
+nav h2{
+    color: #2563eb;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+}
+nav ul li a:hover{
+    color: #2563eb;
+}
+
+/* Header Section */
+.header{
+    background:#1e90ff;
+    color:#fff;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.header h1{
+    font-size:36px;
+    font-weight:700;
+}
+
+.header p{
+    margin-top:10px;
+    font-size:16px;
+    opacity:0.8;
+}
+
+/* Contact Section */
+.contact-section{
+    max-width:1100px;
+    margin:50px auto;
+    display:flex;
+    gap:40px;
+    padding:20px;
+}
+
+/* Company Info */
+.company-info{
+    flex:1;
+    background:#fff;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.company-info h2{
+    margin-bottom:20px;
+    font-size:22px;
+    color:#0d1b2a;
+}
+
+.info-item{
+    margin-bottom:20px;
+}
+
+.info-item h4{
+    font-size:18px;
+    color: #2563eb;
+    margin-bottom:5px;
+}
+
+.info-item p{
+    font-size:15px;
+    font-weight:500;
+    color:#111;
+}
+
+/* Contact Form */
+.contact-box{
+            width:500px;
+            margin:100px auto;
+            background:white;
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-box h2{
+            color:black;   /* Blue */
+            margin-bottom:20px;
+        }
+
+        .contact-box p{
+            font-size:18px;
+            color:black;
+            margin:10px 0;
+        }
+
+        .contact-box span{
+            font-weight:bold;
+            color:#0a3d62;   /* Blue */
+        }
+
+        .contact-box a{
+            color:#1e90ff;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .contact-box a:hover{
+            text-decoration:underline;
+        }
+@media(max-width:768px){
+    .contact-section{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+<body>
+    <nav>
+        <h2>DATAMEDAI</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index1.html">About Us</a></li>
+            <li><a href="index2.html">Products</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="index3.html">Contact</a></li>
+        </ul>
+
+        </div>
+    </nav>
+
+<div class="header">
+    <h1>Contact Us</h1>
+    <p>Innovating Digital Experiences</p>
+</div>
+
+<div class="contact-section">
+
+    <!-- Company Information -->
+    <div class="company-info">
+        <h2>Company Information</h2>
+
+        <div class="info-item">
+            <h4>DATAMEDAI</h4>
+            <p>Yamuna Tech Solutions Pvt Ltd</p>
+        </div>
+
+        <div class="info-item">
+            <h4>Official Email</h4>
+            <p>contact@yamunatech.com</p>
+        </div>
+
+        <div class="info-item">
+            <h4>Headquarters</h4>
+            <p>karur, Tamil Nadu, India</p>
+        </div>
+
+        <div class="info-item">
+            <h4>Business Hours</h4>
+            <p>Monday - Friday | 9:00 AM - 6:00 PM</p>
+        </div>
+   
+</div>
+    <!-- Contact Form -->
+    <div class="contact-box">
+        <h2>Send Us a Message</h2>
+
+    <p><span>Company Name:</span> DATAMADAI</p>
+    <p><span>Phone:</span><a href="tel:+919884969769"> +91 9884969769</a></p>
+    <p><span>Email:</span> 
+        <a href="mailto:hello@datamedai.com">
+            hello@datamedai.com
+        </a>
+    </p>
+</div>
+ 
+
+
+</div>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.getElementById("successMessage").style.display = "block";
+    this.reset();
+});
+</script>
+
+</body>
+</html>
